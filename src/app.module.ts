@@ -5,6 +5,7 @@ import * as process from "process";
 import {ConfigModule} from "@nestjs/config";
 import {dbConnectionsConfig} from "./configs/ormconfig";
 import {DatabaseModule} from "./modules/database/database.module";
+import {SubscriptionModule} from "@modules/subscription/subscription.module";
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import {DatabaseModule} from "./modules/database/database.module";
     }),
 
     DatabaseModule,
+    SubscriptionModule,
   ],
   controllers: [AppController],
   providers: [AppService],
