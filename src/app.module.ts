@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import * as process from "process";
 import {ConfigModule} from "@nestjs/config";
 import {dbConnectionsConfig} from "./configs/ormconfig";
-import {DatabaseModule} from "./modules/database/database.module";
+import {DatabaseModule} from "@modules/database/database.module";
 import {SubscriptionModule} from "@modules/subscription/subscription.module";
 
 @Module({

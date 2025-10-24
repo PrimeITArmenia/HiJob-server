@@ -2,13 +2,7 @@ import {
   Body,
   Controller,
   Get,
-  Param,
-  ParseEnumPipe,
-  ParseIntPipe,
-  Patch,
   Post,
-  Query,
-  UseGuards,
 } from '@nestjs/common';
 import {SubscriptionService} from "@modules/subscription/subscription.service";
 import {CreateSubscriptionDto} from "@modules/subscription/dto/create.subscription.dto";
