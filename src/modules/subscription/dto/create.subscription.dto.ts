@@ -1,4 +1,4 @@
-import {IsEnum, IsNotEmpty, IsString} from 'class-validator';
+import {IsBoolean, IsEnum, IsNotEmpty, IsOptional, IsString} from 'class-validator';
 import {RoleEnum} from "@app/common/enums/role.enum";
 
 export class CreateSubscriptionDto {
@@ -17,4 +17,12 @@ export class CreateSubscriptionDto {
   @IsEnum(RoleEnum)
   @IsNotEmpty()
   role: RoleEnum;
+
+  @IsBoolean()
+  @IsNotEmpty()
+  allowShowInfo: boolean;
+
+  @IsString()
+  @IsOptional()
+  profession?: string;
 }
