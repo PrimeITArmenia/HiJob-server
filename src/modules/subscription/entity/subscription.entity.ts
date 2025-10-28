@@ -15,4 +15,10 @@ export class SubscriptionEntity extends BaseEntity {
 
   @Column({ type: 'varchar', nullable: false })
   role: RoleEnum;
+
+  @Column({ type: 'boolean', nullable: false, default: false })
+  allowShowInfo: boolean;
+
+  @Column({ type: 'varchar', nullable: true })
+  profession: string;
 }
