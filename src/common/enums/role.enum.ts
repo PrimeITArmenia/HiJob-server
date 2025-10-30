@@ -1,4 +1,5 @@
 export enum RoleEnum {
   Client = "Client",
-  Talent = "Talent"
+  Talent = "Talent",
+  Investor = "Investor",
 }
