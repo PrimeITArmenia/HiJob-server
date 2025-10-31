@@ -10,6 +10,9 @@ export class SubscriptionEntity extends BaseEntity {
   @Column({ type: 'varchar', nullable: false })
   lastName: string;
 
+  @Column({ type: 'varchar', nullable: false })
+  public country: string;
+
   @Column({ type: 'varchar', nullable: false, unique: true })
   email: string;
 
