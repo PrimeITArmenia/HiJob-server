@@ -12,6 +12,10 @@ export class CreateSubscriptionDto {
 
   @IsString()
   @IsNotEmpty()
+  country: string;
+
+  @IsString()
+  @IsNotEmpty()
   email: string;
 
   @IsEnum(RoleEnum)
